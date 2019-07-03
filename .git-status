@@ -1,0 +1,2 @@
+# Config file for git-status tool to list statuses of multiple git repos
+# Add full paths to git repos, newline delimited

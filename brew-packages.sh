@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# Installs my favorite brew packages
+set -eu
+
+brew install \
+  azure-cli \
+  azure-functions-core-tools \
+  cmake \
+  colordiff \
+  coreutils \
+  diff-so-fancy \
+  docker-machine \
+  docker-machine-driver-hyperkit \
+  dos2unix \
+  erlang@19 \
+  ethereum \
+  exa \
+  gettext \
+  git \
+  glib \
+  gmp \
+  gnutls \
+  go \
+  hexedit \
+  htop \
+  httpie \
+  imagemagick \
+  jq \
+  jsonlint \
+  kubernetes-cli \
+  kubernetes-helm \
+  lazydocker \
+  mitmproxy \
+  mssql-tools \
+  node \
+  nano \
+  openssl \
+  pkg-config \
+  proxychains-ng \
+  python3 \
+  readline \
+  the_silver_searcher \
+  watch \
+  webp \
+  wireshark \
+  x265 \
+  yq \
