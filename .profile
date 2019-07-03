@@ -65,3 +65,4 @@ export PATH=$PATH:~/go/bin
 export PATH=$PATH:./node_modules/.bin
 export PATH="$PATH:$HOME/istio-1.1.7/bin"
 export PATH="$PATH:$HOME/scripts"
+export PATH="$PATH:~/git/mrdefenestrator/environment/"
