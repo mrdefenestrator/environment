@@ -12,19 +12,17 @@ brew install \
   docker-machine \
   docker-machine-driver-hyperkit \
   dos2unix \
-  erlang@19 \
   ethereum \
   exa \
   gettext \
   git \
-  glib \
-  gmp \
   gnutls \
   go \
   hexedit \
   htop \
   httpie \
   imagemagick \
+  iterm2 \
   jq \
   jsonlint \
   kubernetes-cli \
@@ -41,7 +39,5 @@ brew install \
   readline \
   the_silver_searcher \
   watch \
-  webp \
   wireshark \
-  x265 \
-  yq \
+  yq
