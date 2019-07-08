@@ -21,6 +21,7 @@ brew install \
   hexedit \
   htop \
   httpie \
+  hub \
   imagemagick \
   iterm2 \
   jq \
