@@ -2,6 +2,14 @@
 # Installs my favorite brew packages
 set -eu
 
+brew tap \
+  azure/functions \
+  homebrew/cask \
+  homebrew/core \
+  homebrew/services \
+  jesseduffield/lazydocker \
+  microsoft/mssql-preview
+
 brew install \
   azure-cli \
   azure-functions-core-tools \
