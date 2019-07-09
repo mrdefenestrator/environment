@@ -4,9 +4,6 @@ set -eu
 
 brew tap \
   azure/functions \
-  homebrew/cask \
-  homebrew/core \
-  homebrew/services \
   jesseduffield/lazydocker \
   microsoft/mssql-preview
 
