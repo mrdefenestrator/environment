@@ -38,7 +38,7 @@ brew install \
   mssql-tools \
   node \
   nano \
-  openssl \
+  openssl@1.1 \
   pkg-config \
   proxychains-ng \
   python3 \
