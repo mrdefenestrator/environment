@@ -11,7 +11,7 @@ alias wireshark="nohup sudo Wireshark &> /dev/null &"
 alias gs="git-status"
 alias gvnm="grep -v node_modules"
 alias bl="./node_modules/.bin/bunyan"
-alias k="kubectl"
+#alias k="kubectl"
 alias myopenssl="/usr/local/Cellar/openssl/1.0.2s/bin/openssl"
 alias wf="watch -n 1 -d"
 
