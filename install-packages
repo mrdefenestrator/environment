@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Installs all persisted mas packages
-set -eu
+set -u
 
 brew install $(cat brew-requirements.txt)
 brew cask install $(cat brew-cask-requirements.txt)
 mas install $(cat mas-requirements.txt | sed -E "s/([0-9]+).*/\1/g")
 #cat mas-requirements.txt | sed -E "s/([0-9]+).*/\1/g" | xargs -I {} sh -c 'mas install {}'
-cat mas-requirements.txt | xargs -I {} sh -c 'code --install-extension {}'
+cat vscode-requirements.txt | xargs -I {} sh -c 'code --install-extension {}'
 
