@@ -11,7 +11,7 @@ alias wireshark="nohup sudo Wireshark &> /dev/null &"
 alias gs="git-status"
 alias gvnm="grep -v node_modules"
 alias bl="./node_modules/.bin/bunyan"
-#alias k="kubectl"
+#alias k="kubectl" This is better as a symlink for use in conjunction with watch
 alias myopenssl="/usr/local/Cellar/openssl/1.0.2s/bin/openssl"
 alias wf="watch -n 1 -d"
 
@@ -65,6 +65,4 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:./node_modules/.bin
-export PATH="$PATH:$HOME/istio-1.1.7/bin"
-export PATH="$PATH:~/git/mrdefenestrator/environment/"
-export PATH=/Users/mgauthiere/git/dcpmidstream/dcp-services-config/infrastructure/istio-1.1.7/bin:/Users/mgauthiere/.nvm/versions/node/v8.16.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mgauthiere/go/bin:./node_modules/.bin:/Users/mgauthiere/istio-1.1.7/bin:~/git/mrdefenestrator/environment/
+export PATH="$PATH:~/git/mrdefenestrator/environment/scripts"

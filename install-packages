@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Installs all persisted mas packages
+# Installs all persisted brew, cask, mas, and vscode packages
 
 if [[ "${1}" == "--upgrade" || "${1}" == "-u" ]]; then
   brew upgrade $(cat brew-requirements.txt)
