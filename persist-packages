@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Persists the currently installed packages
+set -eu
+
+brew list > brew-requirements.txt
+brew cask list > brew-cask-requirements.txt
+mas list > mas-requirements.txt
+code --list-extensions > vscode-requirements.txt

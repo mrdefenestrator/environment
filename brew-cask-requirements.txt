@@ -1,0 +1,7 @@
+citrix-receiver
+diffmerge
+dotnet-sdk
+filezilla
+gimp
+minikube
+vlc
