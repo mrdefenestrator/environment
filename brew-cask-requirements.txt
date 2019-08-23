@@ -1,6 +1,7 @@
 bettertouchtool
 dbeaver-community
 diffmerge
+docker
 dotnet-sdk
 filezilla
 firefox
@@ -14,6 +15,6 @@ nordvpn
 postman
 pycharm-ce
 slack
-vlc
 visual-studio-code
+vlc
 wireshark
