@@ -5,7 +5,7 @@ if [[ "${1}" == "--upgrade" || "${1}" == "-u" ]]; then
   brew upgrade $(cat brew-requirements.txt)
   brew cask upgrade $(cat brew-cask-requirements.txt)
   mas upgrade $(cat mas-requirements.txt | sed -E "s/([0-9]+).*/\1/g")
-  cat vscode-requirements.txt | xargs -I {} sh -c 'code --install-extension --force {}'
+  cat vscode-requirements.txt | xargs -I {} sh -c 'code --install-extension {} --force'
 else
   brew install $(cat brew-requirements.txt)
   brew cask install $(cat brew-cask-requirements.txt)
