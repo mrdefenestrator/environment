@@ -42,6 +42,8 @@ jemalloc
 jpeg
 jq
 jsonlint
+kubectx
+kube-ps1
 kubernetes-cli
 kubernetes-helm
 lazydocker

@@ -28,6 +28,9 @@ stty start undef
 export GREP_OPTIONS='--color=always'
 export GREP_COLOR='1;35;40'
 
+# Kubernetes
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+
 # Git -------------------------------------------------------------------------
 function parse_git_untracked {
   git status 2> /dev/null | grep "Untracked files:" &> /dev/null && printf "\033[1;31m~\033[0m"
@@ -49,7 +52,7 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Prompt ----------------------------------------------------------------------
-export PS1='\033[01;36m\]\n\u@\h\[\033[00m\]:\[\033[01;34m\]\w \[\033[00m\]$(parse_git_branch)\n> '
+export PS1='\n$(kube_ps1)\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \[\033[00m\]$(parse_git_branch)\n> '
 
 # SSH -------------------------------------------------------------------------
 #eval `ssh-agent`
