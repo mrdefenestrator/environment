@@ -1,5 +1,6 @@
 azure-cli
 azure-functions-core-tools
+bash-git-prompt
 c-ares
 cmake
 colordiff
@@ -8,6 +9,7 @@ diff-so-fancy
 docker-machine
 docker-machine-driver-hyperkit
 dos2unix
+el
 erlang@19
 ethereum
 exa
@@ -42,11 +44,12 @@ jemalloc
 jpeg
 jq
 jsonlint
-kubectx
 kube-ps1
+kubectx
 kubernetes-cli
 kubernetes-helm
 lazydocker
+lazygit
 libde265
 libev
 libevent
@@ -96,6 +99,7 @@ pkg-config
 protobuf
 proxychains-ng
 python
+python-yq
 python3
 python@2
 qt

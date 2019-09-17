@@ -2,6 +2,7 @@
 # Persists the currently installed packages for brew, cask, mas, and vscode
 set -eu
 
+brew tap > brew-tap-requirements.txt
 brew list > brew-requirements.txt
 brew cask list > brew-cask-requirements.txt
 mas list > mas-requirements.txt

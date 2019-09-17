@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Installs all persisted brew, cask, mas, and vscode packages
 
+cat brew-tap-requirements.txt | xargs -I {} sh -c 'brew tap {}'
+
+
 if [[ "${1}" == "--upgrade" || "${1}" == "-u" ]]; then
   brew upgrade $(cat brew-requirements.txt)
   brew cask upgrade $(cat brew-cask-requirements.txt)

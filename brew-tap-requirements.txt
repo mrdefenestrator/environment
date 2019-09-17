@@ -1,0 +1,6 @@
+azure/functions
+dcpmidstream/core
+homebrew/cask
+homebrew/core
+homebrew/services
+microsoft/mssql-preview
