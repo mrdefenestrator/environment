@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Bootstraps a brand new system
+set -eu
+
+brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+mkdir -p ~/git/mrdefenestrator/
+
+(
+  cd ~/git/mrdefenestrator/
+  git clone git://github.com/mrdefenestrator/environment.git || true
+  cd environment/
+  ./install-packages
+)
