@@ -11,4 +11,5 @@ mkdir -p ~/git/mrdefenestrator/
   git clone git://github.com/mrdefenestrator/environment.git || true
   cd environment/
   ./install-packages
+  ./link
 )
