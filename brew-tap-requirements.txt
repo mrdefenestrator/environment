@@ -1,4 +1,5 @@
 azure/functions
+chmouel/tektoncd-cli
 dcpmidstream/core
 homebrew/cask
 homebrew/core

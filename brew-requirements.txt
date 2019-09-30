@@ -97,7 +97,6 @@ protobuf
 proxychains-ng
 python
 python-yq
-python3
 python@2
 qt
 readline
@@ -107,6 +106,7 @@ shellcheck
 spidermonkey
 sqlite
 sslsplit
+tektoncd-cli
 terraform
 the_silver_searcher
 unbound
