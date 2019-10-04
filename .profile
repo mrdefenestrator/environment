@@ -28,7 +28,7 @@ stty start undef
 export GREP_OPTIONS='--color=always'
 export GREP_COLOR='1;35;40'
 
-# Kubernetes
+# Kubernetes ------------------------------------------------------------------
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 
 # Git -------------------------------------------------------------------------
@@ -57,15 +57,20 @@ export PS1='\n$(kube_ps1)\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \[\033
 # SSH -------------------------------------------------------------------------
 #eval `ssh-agent`
 
-# NVM -------------------------------------------------------------------------
+# Node -------------------------------------------------------------------------
+export PATH="$PATH:./node_modules/.bin"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # ITERM2-----------------------------------------------------------------------
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+# Golang ----------------------------------------------------------------------
+export GO111MODULE="auto"
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:$GOBIN"
+
 # Path ------------------------------------------------------------------------
-export GOPATH=~/go
-export PATH=$PATH:~/go/bin
-export PATH=$PATH:./node_modules/.bin
 export PATH="$PATH:~/git/mrdefenestrator/environment/scripts"
