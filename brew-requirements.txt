@@ -75,9 +75,6 @@ lua@5.1
 mas
 micro
 mitmproxy
-mongodb
-msodbcsql
-mssql-tools
 nano
 ncftp
 ncurses
@@ -100,7 +97,6 @@ protobuf
 proxychains-ng
 python
 python-yq
-python3
 python@2
 qt
 readline
@@ -110,6 +106,7 @@ shellcheck
 spidermonkey
 sqlite
 sslsplit
+tektoncd-cli
 terraform
 the_silver_searcher
 unbound
@@ -122,4 +119,3 @@ wxmac
 x265
 xmlstarlet
 xz
-yq

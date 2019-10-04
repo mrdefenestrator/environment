@@ -3,7 +3,6 @@ dbeaver-community
 diffmerge
 docker
 dotnet-sdk
-filezilla
 firefox
 gimp
 google-chrome

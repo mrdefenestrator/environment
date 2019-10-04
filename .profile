@@ -30,6 +30,8 @@ export GREP_COLOR='1;35;40'
 
 # Kubernetes ------------------------------------------------------------------
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+source "/usr/local/Cellar/kubectx/0.6.3/etc/bash_completion.d/kubectx"
+source "/usr/local/Cellar/kubectx/0.6.3/etc/bash_completion.d/kubens"
 
 # Git -------------------------------------------------------------------------
 function parse_git_untracked {
