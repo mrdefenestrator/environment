@@ -1,5 +1,6 @@
 azure-cli
 azure-functions-core-tools
+bash-completion
 bash-git-prompt
 c-ares
 cmake
@@ -97,6 +98,7 @@ protobuf
 proxychains-ng
 python
 python-yq
+python3
 python@2
 qt
 readline
@@ -119,3 +121,4 @@ wxmac
 x265
 xmlstarlet
 xz
+yq
