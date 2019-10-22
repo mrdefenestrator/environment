@@ -51,6 +51,7 @@ function parse_git_branch {
 }
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
+
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Prompt ----------------------------------------------------------------------
@@ -81,3 +82,6 @@ export PATH="$PATH:$GOBIN"
 
 # Path ------------------------------------------------------------------------
 export PATH="$PATH:~/git/mrdefenestrator/environment/scripts"
+
+# Misc ------------------------------------------------------------------------
+source /usr/local/etc/bash_completion.d/el
