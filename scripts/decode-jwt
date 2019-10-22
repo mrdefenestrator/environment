@@ -1,0 +1,9 @@
+
+#!/usr/bin/env bash
+set -eu
+
+TOKEN="${1}"
+
+cut -d . -f 1 <(echo "${TOKEN}") | base64 -D | jq
+cut -d . -f 2 <(echo "${TOKEN}") | base64 -D | jq
+cut -d . -f 3 <(echo "${TOKEN}")
