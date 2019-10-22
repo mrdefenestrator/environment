@@ -121,4 +121,3 @@ wxmac
 x265
 xmlstarlet
 xz
-yq
