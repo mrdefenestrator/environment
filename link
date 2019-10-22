@@ -20,5 +20,6 @@ backup_and_link .profile
 backup_and_link .git-status
 backup_and_link .nanorc
 backup_and_link .gitconfig
+backup_and_link .inputrc
 
 source "${HOME}/.profile"

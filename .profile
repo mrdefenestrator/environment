@@ -82,6 +82,7 @@ export PATH="$PATH:$GOBIN"
 
 # Path ------------------------------------------------------------------------
 export PATH="$PATH:~/git/mrdefenestrator/environment/scripts"
+export PATH="$PATH:~/git/dcpmidstream/onyx-config"
 
 # Misc ------------------------------------------------------------------------
 source /usr/local/etc/bash_completion.d/el
