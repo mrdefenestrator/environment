@@ -32,6 +32,7 @@ grafana
 graphviz
 gron
 gts
+helm
 hexedit
 htop
 httpie
@@ -75,6 +76,7 @@ lua
 lua@5.1
 mas
 micro
+minikube
 mitmproxy
 nano
 ncftp
