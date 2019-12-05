@@ -76,13 +76,13 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # Golang ----------------------------------------------------------------------
 export GO111MODULE="auto"
-export GOPATH="$HOME/go"
-export GOBIN="$GOPATH/bin"
-export PATH="$PATH:$GOBIN"
+export GOPATH="${HOME}/go"
+export GOBIN="${GOPATH}/bin"
+export PATH="${PATH}:${GOBIN}"
 
 # Path ------------------------------------------------------------------------
-export PATH="$PATH:~/git/mrdefenestrator/environment/scripts"
-export PATH="$PATH:~/git/dcpmidstream/onyx-config"
+export PATH="${PATH}:${HOME}/git/mrdefenestrator/environment/scripts"
+export PATH="${PATH}:${HOME}/git/dcpmidstream/onyx-config"
 
 # Misc ------------------------------------------------------------------------
 source /usr/local/etc/bash_completion.d/el
