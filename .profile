@@ -86,3 +86,4 @@ export PATH="$PATH:~/git/dcpmidstream/onyx-config"
 
 # Misc ------------------------------------------------------------------------
 source /usr/local/etc/bash_completion.d/el
+source "${HOME}/.npm_token"
