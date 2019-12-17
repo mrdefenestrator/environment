@@ -1,6 +1,7 @@
 set nowrap
 set tabsize 4
 set smooth
+set linenumbers
 #set mouse
 
 include /usr/local/Cellar/nano/2.9.3/share/nano/asm.nanorc
