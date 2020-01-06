@@ -12,7 +12,7 @@ alias gs="git-status"
 alias gvnm="grep -v node_modules"
 alias bl="./node_modules/.bin/bunyan"
 #alias k="kubectl" This is better as a symlink for use in conjunction with watch
-alias myopenssl="/usr/local/Cellar/openssl/1.0.2s/bin/openssl"
+alias myopenssl="/usr/local/opt/openssl@1.1/bin/openssl"
 alias wf="watch -n 1 -d"
 
 # History ---------------------------------------------------------------------
@@ -30,8 +30,8 @@ export GREP_COLOR='1;35;40'
 
 # Kubernetes ------------------------------------------------------------------
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-source "/usr/local/Cellar/kubectx/0.6.3/etc/bash_completion.d/kubectx"
-source "/usr/local/Cellar/kubectx/0.6.3/etc/bash_completion.d/kubens"
+source "/usr/local/opt/kubectx/etc/bash_completion.d/kubectx"
+source "/usr/local/opt/kubectx/etc/bash_completion.d/kubens"
 
 # Git -------------------------------------------------------------------------
 function parse_git_untracked {
@@ -80,6 +80,10 @@ export GOPATH="${HOME}/go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${PATH}:${GOBIN}"
 
+# OpenFaaS  ------------------------------------------------------------------------
+export OPENFAAS_PREFIX="squadsquaddeveloper"
+export OPENFAAS_URL="http://127.0.0.1:8080"
+
 # Path ------------------------------------------------------------------------
 export PATH="${PATH}:${HOME}/git/mrdefenestrator/environment/scripts"
 export PATH="${PATH}:${HOME}/git/dcpmidstream/onyx-config"
@@ -87,3 +91,4 @@ export PATH="${PATH}:${HOME}/git/dcpmidstream/onyx-config"
 # Misc ------------------------------------------------------------------------
 source /usr/local/etc/bash_completion.d/el
 source "${HOME}/.npm_token"
+
