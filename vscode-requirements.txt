@@ -12,9 +12,9 @@ eg2.vscode-npm-script
 esbenp.prettier-vscode
 glen-84.sass-lint
 humao.rest-client
+johnpapa.vscode-peacock
 JuanBlanco.solidity
 karigari.chat
-mauve.terraform
 mikestead.dotenv
 ms-azure-devops.azure-pipelines
 ms-azuretools.vscode-azureappservice
@@ -28,6 +28,7 @@ ms-vscode.cpptools
 ms-vscode.Go
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
+ms-vsliveshare.vsliveshare-pack
 msazurermtools.azurerm-vscode-tools
 natewallace.angular2-inline
 numaru.vscode-tap

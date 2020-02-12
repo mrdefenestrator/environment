@@ -1,8 +1,9 @@
+awscli
 azure-cli
 azure-functions-core-tools
-bash-completion
 bash-git-prompt
 c-ares
+circleci
 cmake
 colordiff
 coreutils
@@ -14,6 +15,7 @@ el
 erlang@19
 ethereum
 exa
+faas-cli
 fish
 fluxctl
 fontconfig
@@ -32,7 +34,7 @@ grafana
 graphviz
 gron
 gts
-helm
+helm@2
 hexedit
 htop
 httpie
@@ -46,10 +48,11 @@ jemalloc
 jpeg
 jq
 jsonlint
+k3d
 kube-ps1
 kubectx
 kubernetes-cli
-kubernetes-helm
+kustomize
 lazydocker
 lazygit
 libde265
@@ -71,9 +74,11 @@ libtasn1
 libtiff
 libtool
 libunistring
+libyaml
 little-cms2
 lua
 lua@5.1
+lynx
 mas
 micro
 minikube
@@ -100,7 +105,6 @@ protobuf
 proxychains-ng
 python
 python-yq
-python3
 python@2
 qt
 readline
@@ -123,3 +127,4 @@ wxmac
 x265
 xmlstarlet
 xz
+yamllint

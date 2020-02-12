@@ -14,6 +14,8 @@ nordvpn
 postman
 pycharm-ce
 slack
+spectacle
 spotify
 visual-studio-code
 vlc
+wireshark
