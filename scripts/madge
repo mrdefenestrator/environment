@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs madge to analyze dependency tree
+set -eu
+
+npx madge $@
