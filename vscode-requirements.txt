@@ -7,7 +7,6 @@ dawhite.mustache
 dbaeumer.vscode-eslint
 eamodio.gitlens
 ed-elliott.azure-arm-template-helper
-eg2.tslint
 eg2.vscode-npm-script
 esbenp.prettier-vscode
 glen-84.sass-lint
@@ -15,6 +14,7 @@ humao.rest-client
 johnpapa.vscode-peacock
 JuanBlanco.solidity
 karigari.chat
+kisstkondoros.vscode-codemetrics
 mikestead.dotenv
 ms-azure-devops.azure-pipelines
 ms-azuretools.vscode-azureappservice
