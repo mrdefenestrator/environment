@@ -55,7 +55,6 @@ k3d
 kube-ps1
 kubectx
 kubernetes-cli
-kubernetes-helm
 kustomize
 lazydocker
 lazygit
@@ -99,7 +98,6 @@ nspr
 oniguruma
 openexr
 openjpeg
-openssl
 openssl@1.1
 p11-kit
 pcre
@@ -109,7 +107,6 @@ protobuf
 proxychains-ng
 python
 python-yq
-python3
 python@3.8
 qt
 readline

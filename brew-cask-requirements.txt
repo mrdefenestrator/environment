@@ -5,7 +5,6 @@ docker
 dotnet-sdk
 firefox
 gimp
-google-chrome
 iterm2
 karabiner-elements
 microsoft-teams
