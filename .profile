@@ -87,8 +87,3 @@ export OPENFAAS_URL="http://127.0.0.1:8080"
 # Path ------------------------------------------------------------------------
 export PATH="${PATH}:${HOME}/git/mrdefenestrator/environment/scripts"
 export PATH="${PATH}:${HOME}/git/dcpmidstream/onyx-config"
-
-# Misc ------------------------------------------------------------------------
-source /usr/local/etc/bash_completion.d/el
-source "${HOME}/.npm_token"
-

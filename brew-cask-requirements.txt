@@ -9,7 +9,6 @@ google-chrome
 iterm2
 karabiner-elements
 microsoft-teams
-minikube
 nordvpn
 postman
 pycharm-ce
