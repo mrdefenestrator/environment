@@ -6,12 +6,13 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 function backup_and_link {
   if [[ -L "${HOME}/$1" ]]; then
-    echo "$1 already done"
+    ln -sf "${DIR}/linkables/$1" "${HOME}/$1"
+    echo "$1 already linked, updated anyway"
   else
     if [[ -f "${HOME}/$1" ]]; then
       cp -r "${HOME}/$1" "${HOME}/$1.bak"
     fi
-    ln -sf "${DIR}/$1" "${HOME}/$1"
+    ln -sf "${DIR}/linkables/$1" "${HOME}/$1"
     echo "linked $1"
   fi
 }
