@@ -16,4 +16,5 @@ spectacle
 spotify
 visual-studio-code
 vlc
+webex-teams
 wireshark

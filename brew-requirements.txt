@@ -109,6 +109,8 @@ python
 python-yq
 python@3.8
 qt
+rancher-cli
+rancher-compose
 readline
 redis
 shared-mime-info
