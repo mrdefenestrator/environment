@@ -133,7 +133,7 @@
     },
     "window.nativeTabs": true,
     "window.restoreWindows": "all",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Monokai",
     "workbench.sideBar.location": "left"
