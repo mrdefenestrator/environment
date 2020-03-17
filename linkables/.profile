@@ -11,9 +11,10 @@ alias wireshark="nohup sudo Wireshark &> /dev/null &"
 alias gs="git-status"
 alias gvnm="grep -v node_modules"
 alias bl="./node_modules/.bin/bunyan"
-#alias k="kubectl" This is better as a symlink for use in conjunction with watch
 alias myopenssl="/usr/local/opt/openssl@1.1/bin/openssl"
-alias wf="watch -n 1 -d"
+alias wf="watch -n 1 -d "
+alias k="kubectl"
+alias rk="rancher kubectl"
 
 # History ---------------------------------------------------------------------
 export HISTCONTROL=ignoreboth:erasedups
@@ -80,10 +81,13 @@ export GOPATH="${HOME}/go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${PATH}:${GOBIN}"
 
-# OpenFaaS  ------------------------------------------------------------------------
+# OpenFaaS  -------------------------------------------------------------------
 export OPENFAAS_PREFIX="squadsquaddeveloper"
 export OPENFAAS_URL="http://127.0.0.1:8080"
 
 # Path ------------------------------------------------------------------------
 export PATH="${PATH}:${HOME}/git/mrdefenestrator/environment/scripts"
 export PATH="${PATH}:${HOME}/git/dcpmidstream/onyx-config"
+
+# Misc ------------------------------------------------------------------------
+source "${HOME}/.profile-charter"
