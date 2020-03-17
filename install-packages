@@ -14,18 +14,22 @@ get_mas_names() {
 }
 
 
-if [[ "${1}" == "--upgrade" || "${1}" == "-u" ]]; then
-  # brew upgrade "$(cat brew-requirements.txt)"
-  # brew cask upgrade "$(cat brew-cask-requirements.txt)"
-  # mas upgrade "$(cat mas-requirements.txt | get_mas_numbers)"
+if [[ "${1}" == "--upgrade" ]]; then
+  if [[ "${2}" == "--fast" ]]; then
+    brew upgrade "$(cat brew-requirements.txt)"
+    brew cask upgrade "$(cat brew-cask-requirements.txt)"
+    mas upgrade "$(cat mas-requirements.txt | get_mas_numbers)"
+  fi
   cat brew-requirements.txt | xargs -I {} sh -c 'brew upgrade "{}"'
   cat brew-cask-requirements.txt | xargs -I {} sh -c 'brew cask upgrade "{}"'
   cat mas-requirements.txt | get_mas_numbers | xargs -I {} sh -c 'mas upgrade "{}"'
   cat vscode-requirements.txt | xargs -I {} sh -c 'code --install-extension {} --force'
 else
-  #brew install $(cat brew-requirements.txt)
-  #brew cask install $(cat brew-cask-requirements.txt)
-  #mas install $(cat mas-requirements.txt | get_mas_numbers)
+  if [[ "${1}" == "--fast" ]]; then
+    brew install "cat brew-requirements.txt)"
+    brew cask install "cat brew-cask-requirements.txt)"
+    mas install "cat mas-requirements.txt | get_mas_numbers)"
+  fi
   cat brew-requirements.txt | xargs -I {} sh -c 'brew install "{}"'
   cat brew-cask-requirements.txt | xargs -I {} sh -c 'brew cask install "{}"'
   cat mas-requirements.txt | get_mas_numbers | xargs -I {} sh -c 'mas install "{}"'

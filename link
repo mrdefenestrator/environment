@@ -13,7 +13,7 @@ function backup_and_link {
       cp -r "${HOME}/$1" "${HOME}/$1.bak"
     fi
     ln -sf "${DIR}/linkables/$1" "${HOME}/$1"
-    echo "linked $1"
+    echo "$1 linked"
   fi
 }
 
@@ -23,5 +23,6 @@ backup_and_link .nanorc
 backup_and_link .gitconfig
 backup_and_link .inputrc
 backup_and_link "Library/Application Support/Code/User/settings.json"
+backup_and_link "Library/Preferences/com.googlecode.iterm2.plist"
 
 source "${HOME}/.profile"
