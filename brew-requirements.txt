@@ -123,6 +123,7 @@ terraform
 the_silver_searcher
 unbound
 unixodbc
+velero
 vsts-cli
 watch
 webp
