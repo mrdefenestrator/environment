@@ -52,7 +52,6 @@ function parse_git_branch {
 }
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
-
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Prompt ----------------------------------------------------------------------
@@ -81,13 +80,8 @@ export GOPATH="${HOME}/go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${PATH}:${GOBIN}"
 
-# OpenFaaS  -------------------------------------------------------------------
-export OPENFAAS_PREFIX="squadsquaddeveloper"
-export OPENFAAS_URL="http://127.0.0.1:8080"
-
 # Path ------------------------------------------------------------------------
 export PATH="${PATH}:${HOME}/git/mrdefenestrator/environment/scripts"
-export PATH="${PATH}:${HOME}/git/dcpmidstream/onyx-config"
 
 # Misc ------------------------------------------------------------------------
 source "${HOME}/.profile-charter"
