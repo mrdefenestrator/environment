@@ -5,3 +5,4 @@ github/gh
 homebrew/cask
 homebrew/core
 homebrew/services
+weaveworks/tap
