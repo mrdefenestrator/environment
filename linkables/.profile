@@ -81,7 +81,7 @@ export GOBIN="${GOPATH}/bin"
 export PATH="${PATH}:${GOBIN}"
 
 # Path ------------------------------------------------------------------------
-export PATH="${PATH}:${HOME}/git/mrdefenestrator/environment/scripts"
+export PATH="${PATH}:${HOME}/git/github.com/mrdefenestrator/environment/scripts"
 
 # Misc ------------------------------------------------------------------------
 source "${HOME}/.profile-charter"
