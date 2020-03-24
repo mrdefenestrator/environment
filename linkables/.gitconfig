@@ -13,9 +13,12 @@
 [user]
 	name = Mike Gauthiere
 	email = mgauthiere@gmail.com
+	signingkey = BDC4B835CE01626934C2C6C87A58D40CA80FA741
 [alias]
 	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy | less --tabs=4 -RFX; }; f"
 	pr = "!f() { exec vsts code pr \"$@\"; }; f"
 	repo = "!f() { exec vsts code repo \"$@\"; }; f"
 [mergetool]
 	keepBackup = false
+[commit]
+	gpgsign = true
