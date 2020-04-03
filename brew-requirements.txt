@@ -93,6 +93,7 @@ mas
 micro
 minikube
 mitmproxy
+mono
 nano
 ncftp
 ncurses
@@ -103,6 +104,7 @@ nginx
 node
 npth
 nspr
+nuget
 oniguruma
 openexr
 openjpeg
