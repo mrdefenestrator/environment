@@ -12,6 +12,7 @@ circleci
 cmake
 codeclimate
 colordiff
+conftest
 coreutils
 diff-so-fancy
 docker-machine
