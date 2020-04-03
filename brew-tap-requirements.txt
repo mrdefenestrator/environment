@@ -1,8 +1,10 @@
 azure/functions
 chmouel/tektoncd-cli
+codeclimate/formulae
 dcpmidstream/core
 github/gh
 homebrew/cask
 homebrew/core
 homebrew/services
+instrumenta/instrumenta
 weaveworks/tap

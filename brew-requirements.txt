@@ -4,11 +4,13 @@ awscli
 azure-cli
 azure-functions-core-tools
 azure-functions-core-tools@2
+bash
 bash-completion
 bash-git-prompt
 c-ares
 circleci
 cmake
+codeclimate
 colordiff
 coreutils
 diff-so-fancy
@@ -49,6 +51,7 @@ hub
 icu4c
 ilmbase
 imagemagick
+isl
 jansson
 jasper
 jemalloc
@@ -59,6 +62,7 @@ k3d
 kube-ps1
 kubectx
 kubernetes-cli
+kubeval
 kustomize
 lazydocker
 lazygit
@@ -73,6 +77,7 @@ libheif
 libidn2
 libksba
 libmaxminddb
+libmpc
 libnet
 libomp
 libpcap
@@ -94,6 +99,7 @@ micro
 minikube
 mitmproxy
 mono
+mpfr
 nano
 ncftp
 ncurses
