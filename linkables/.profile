@@ -14,6 +14,8 @@ alias bl="./node_modules/.bin/bunyan"
 alias myopenssl="/usr/local/opt/openssl@1.1/bin/openssl"
 alias wf="watch -n 1 -d "
 alias k="kubectl"
+alias e="eksctl"
+alias r="rancher"
 alias rk="rancher kubectl"
 
 # History ---------------------------------------------------------------------
