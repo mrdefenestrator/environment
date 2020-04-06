@@ -20,7 +20,7 @@ alias rk="rancher kubectl"
 
 # History ---------------------------------------------------------------------
 export HISTCONTROL=ignoreboth:erasedups
-export HISTSIZE=2048
+export HISTSIZE=4096
 
 # Allow ctl+s forward history search ------------------------------------------
 stty -ixoff

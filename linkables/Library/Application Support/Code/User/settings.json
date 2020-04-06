@@ -140,5 +140,6 @@
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Monokai",
-    "workbench.sideBar.location": "left"
+    "workbench.sideBar.location": "left",
+    "python.jediEnabled": false
 }
