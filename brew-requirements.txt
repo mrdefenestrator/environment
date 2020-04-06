@@ -52,6 +52,7 @@ hub
 icu4c
 ilmbase
 imagemagick
+ipython
 isl
 jansson
 jasper
@@ -153,3 +154,4 @@ xmlstarlet
 xz
 yamllint
 yarn
+zeromq
