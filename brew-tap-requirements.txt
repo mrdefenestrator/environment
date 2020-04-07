@@ -1,4 +1,3 @@
-azure/functions
 chmouel/tektoncd-cli
 codeclimate/formulae
 dcpmidstream/core

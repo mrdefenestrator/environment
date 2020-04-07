@@ -1,7 +1,5 @@
 awscli
 azure-cli
-azure/functions/azure-functions-core-tools
-azure/functions/azure-functions-core-tools@2
 bash
 bash-completion
 bash-git-prompt
