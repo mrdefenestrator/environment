@@ -1,9 +1,74 @@
 #!/usr/bin/env bash
 # Installs all persisted brew, cask, mas, and vscode packages
-set -x
-set +eu
+set -eu -o pipefail
 
-cat brew-tap-requirements.txt | xargs -I {} sh -c 'brew tap {}'
+verbose=false
+upgrade=false
+fast=false
+only=false
+brew=false
+brew_cask=false
+python=false
+mas=false
+vscode=false
+
+parse_args() {
+  for arg in "$@"; do
+    case "${arg}" in
+      --verbose)
+        verbose=true ;;
+      --upgrade)
+        upgrade=true ;;
+      --fast)
+        fast=true ;;
+      --only)
+        only=true ;;
+      --brew)
+        brew=true ;;
+      --brew-cask)
+        brew_cask=true ;;
+      --python)
+        python=true ;;
+      --mas)
+        mas=true ;;
+      --vscode)
+        vscode=true ;;
+    esac
+  done
+}
+
+print_state() {
+  if [ "${upgrade}" = true ]; then
+    echo upgrade
+  else
+    echo install
+  fi
+  if [ "${fast}" = true ]; then
+    echo fast
+  fi
+  if [ "${only}" = true ]; then
+    echo only
+  fi
+  if [ "${brew}" = true ]; then
+    echo brew
+  fi
+  if [ "${brew_cask}" = true ]; then
+    echo brew_cask
+  fi
+  if [ "${python}" = true ]; then
+    echo python
+  fi
+  if [ "${mas}" = true ]; then
+    echo mas
+  fi
+  if [ "${vscode}" = true ]; then
+    echo vscode
+  fi
+}
+
+get_python_names() {
+  sed -E "s/^(.*)==.*/\1/g" <& 0
+}
 
 get_mas_numbers() {
   sed -E "s/([0-9]+).*/\1/g" <&0
@@ -13,25 +78,90 @@ get_mas_names() {
   sed -E "s/[0-9]+ ([a-zA-Z0-9-]+) .*/\1/g" <&0
 }
 
+do_brew_tap() {
+  if [ "${only}" = false ] || [ "${brew}" = true ] || [ "${brew_cask}" = true ]; then
+    if [ "${upgrade}" = false ]; then
+      xargs -I {} sh -c 'brew tap {}' < brew-tap-requirements.txt
+    fi
+  fi
+}
 
-if [[ "${1}" == "--upgrade" ]]; then
-  if [[ "${2}" == "--fast" ]]; then
-    brew upgrade "$(cat brew-requirements.txt)"
-    brew cask upgrade "$(cat brew-cask-requirements.txt)"
-    mas upgrade "$(cat mas-requirements.txt | get_mas_numbers)"
+do_brew() {
+  if [ "${only}" = false ] || [ "${brew}" = true ]; then
+    if [ "${upgrade}" = true ]; then
+      if [ "${fast}" = true ]; then
+        brew upgrade
+      else
+        xargs -I {} sh -c 'brew upgrade "{}"' < brew-requirements.txt
+      fi
+    else
+      xargs -I {} sh -c 'brew install "{}"' < brew-requirements.txt
+    fi
   fi
-  cat brew-requirements.txt | xargs -I {} sh -c 'brew upgrade "{}"'
-  cat brew-cask-requirements.txt | xargs -I {} sh -c 'brew cask upgrade "{}"'
-  cat mas-requirements.txt | get_mas_numbers | xargs -I {} sh -c 'mas upgrade "{}"'
-  cat vscode-requirements.txt | xargs -I {} sh -c 'code --install-extension {} --force'
-else
-  if [[ "${1}" == "--fast" ]]; then
-    brew install "cat brew-requirements.txt)"
-    brew cask install "cat brew-cask-requirements.txt)"
-    mas install "cat mas-requirements.txt | get_mas_numbers)"
+}
+
+do_brew_cask() {
+  if [ "${only}" = false ] || [ "${brew_cask}" = true ]; then
+    if [ "${upgrade}" = true ]; then
+      if [ "${fast}" = true ]; then
+        brew cask upgrade
+      else
+        xargs -I {} sh -c 'brew cask upgrade "{}"' < brew-cask-requirements.txt
+      fi
+    else
+      xargs -I {} sh -c 'brew cask install "{}"' < brew-cask-requirements.txt
+    fi
   fi
-  cat brew-requirements.txt | xargs -I {} sh -c 'brew install "{}"'
-  cat brew-cask-requirements.txt | xargs -I {} sh -c 'brew cask install "{}"'
-  cat mas-requirements.txt | get_mas_numbers | xargs -I {} sh -c 'mas install "{}"'
-  cat vscode-requirements.txt | xargs -I {} sh -c 'code --install-extension {}'
-fi
+}
+
+do_python() {
+  if [ "${only}" = false ] || [ "${python}" = true ]; then
+    if [ "${upgrade}" = true ]; then
+      get_python_names < python-requirements.txt | xargs -I {} sh -c 'pip3 install --upgrade "{}"'
+    else
+      get_python_names < python-requirements.txt | xargs -I {} sh -c 'pip3 install "{}"'
+    fi
+  fi
+}
+
+do_mas() {
+  if [ "${only}" = false ] || [ "${mas}" = true ]; then
+    if [ "${upgrade}" = true ]; then
+      if [ "${fast}" = true ]; then
+        mas upgrade
+      else
+        get_mas_numbers < mas-requirements.txt | xargs -I {} sh -c 'mas upgrade "{}"'
+      fi
+    else
+      get_mas_numbers < mas-requirements.txt | xargs -I {} sh -c 'mas install "{}"'
+    fi
+  fi
+}
+
+do_vscode() {
+  if [ "${only}" = false ] || [ "${vscode}" = true ]; then
+    if [ "${upgrade}" = true ]; then
+      xargs -I {} sh -c 'code --install-extension {} --force' < vscode-requirements.txt
+    else
+      xargs -I {} sh -c 'code --install-extension {}' < vscode-requirements.txt
+    fi
+  fi
+}
+
+main() {
+  parse_args "$@"
+
+  if [ "${verbose}" = true ]; then
+    print_state
+    set -x
+  fi
+
+  do_brew_tap || true
+  do_brew || true
+  do_brew_cask || true
+  do_python || true
+  do_mas || true
+  do_vscode || true
+}
+
+main "$@"
