@@ -70,6 +70,7 @@ sslsplit
 tektoncd-cli
 terraform
 the_silver_searcher
+tree
 unixodbc
 velero
 vsts-cli

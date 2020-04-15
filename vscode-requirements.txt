@@ -15,6 +15,7 @@ johnpapa.vscode-peacock
 JuanBlanco.solidity
 karigari.chat
 kisstkondoros.vscode-codemetrics
+mauve.terraform
 mikestead.dotenv
 ms-azure-devops.azure-pipelines
 ms-azuretools.vscode-azureappservice
