@@ -17,6 +17,7 @@ alias k="kubectl"
 alias e="eksctl"
 alias r="rancher"
 alias rk="rancher kubectl"
+alias tf="terraform"
 
 # History ---------------------------------------------------------------------
 export HISTCONTROL=ignoreboth:erasedups
