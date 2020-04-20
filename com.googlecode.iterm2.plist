@@ -31,9 +31,13 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/git/github.com/mrdefenestrator/environment</string>
+	<string>/Applications</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -76,7 +80,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>320 321 799 448 0 0 1440 877 </string>
+	<string>320 339 799 448 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>711 900 1277 1417 -569 900 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -86,6 +90,18 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>AWDS Pane Directory</key>
+			<string></string>
+			<key>AWDS Pane Option</key>
+			<string>Recycle</string>
+			<key>AWDS Tab Directory</key>
+			<string></string>
+			<key>AWDS Tab Option</key>
+			<string>Recycle</string>
+			<key>AWDS Window Directory</key>
+			<string></string>
+			<key>AWDS Window Option</key>
+			<string>Recycle</string>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -263,7 +279,7 @@
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
-			<true/>
+			<integer>1</integer>
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
@@ -291,7 +307,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Advanced</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -628,7 +644,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>2048</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -660,7 +676,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.15786405456852792</real>
+			<real>0.094672033629441626</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -741,14 +757,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{-569, 900}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{398, 727}</string>
+		<string>{133, 1982}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>04939A7E-D1A0-4DB9-8D5D-E8708A25FA00</string>
 	<key>NoSyncLastTipTime</key>
-	<real>607880705.37339401</real>
+	<real>609088399.60499895</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
 	<integer>7</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -1483,23 +1499,36 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSaveDocumentAsPathSet_saveDocumentAs:</key>
+	<true/>
+	<key>NoSyncSuppressCaptureOutputToolNotVisibleWarning</key>
+	<true/>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>605842630.35022795</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>0004</string>
-		<string>0000</string>
 		<string>0010</string>
-		<string>0007</string>
-		<string>0003</string>
-		<string>0006</string>
-		<string>0002</string>
-		<string>000</string>
+		<string>0015</string>
+		<string>0004</string>
 		<string>0009</string>
-		<string>0005</string>
-		<string>0001</string>
-		<string>0008</string>
+		<string>0013</string>
+		<string>0002</string>
+		<string>0018</string>
+		<string>0007</string>
 		<string>0011</string>
+		<string>0000</string>
+		<string>0016</string>
+		<string>0005</string>
+		<string>0014</string>
+		<string>0003</string>
+		<string>0019</string>
+		<string>0008</string>
+		<string>0012</string>
+		<string>0001</string>
+		<string>000</string>
+		<string>0017</string>
+		<string>0006</string>
+		<string>0020</string>
 	</array>
 	<key>NoSyncToolbeltProportions</key>
 	<dict>
@@ -1507,19 +1536,19 @@
 		<array>
 			<dict>
 				<key>heightAsFraction</key>
-				<real>0.27449888641425391</real>
+				<real>0.33094041636755206</real>
 				<key>name</key>
 				<string>Captured Output</string>
 			</dict>
 			<dict>
 				<key>heightAsFraction</key>
-				<real>0.58407572383073492</real>
+				<real>0.44077530509691315</real>
 				<key>name</key>
 				<string>Command History</string>
 			</dict>
 			<dict>
 				<key>heightAsFraction</key>
-				<real>0.14142538975501115</real>
+				<real>0.22828427853553482</real>
 				<key>name</key>
 				<string>Jobs</string>
 			</dict>
@@ -1575,7 +1604,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-06T15:21:37Z</date>
+	<date>2020-04-19T16:14:16Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
