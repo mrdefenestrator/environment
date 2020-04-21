@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Merge kubectl config file with ~/.kube/config
+set -eu -o pipefail
+
+main() {
+  local new_config=${1}
+
+  merged="$(KUBECONFIG="${HOME}/.kube/config:${new_config}" kubectl config view --flatten)"
+  echo "${merged}" > "${HOME}/.kube/config"
+}
+
+main "$@"

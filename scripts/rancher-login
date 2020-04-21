@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Login to rancher
+set -eu -o pipefail
+
+#[[ -z "${RANCHER_SERVER:-}" ]] && echo "must specify RANCHER_SERVER" && exit 1
+#[[ -z "${RANCHER_BEARER_TOKEN:-}" ]] && echo "must specify RANCHER_BEARER_TOKEN" && exit 1
+#[[ -z "${RANCHER_CLUSTER_ID:-}" ]] && echo "must specify RANCHER_CLUSTER_ID" && exit 1
+#[[ -z "${RANCHER_PROJECT_ID:-}" ]] && echo "must specify RANCHER_PROJECT_ID" && exit 1
+#
+#context="c-${RANCHER_CLUSTER_ID}:project-${RANCHER_PROJECT_ID}"
+#echo $context
+
+server="${1}"
+token="${2}"
+
+rancher login --token "${token}" "${server}"
