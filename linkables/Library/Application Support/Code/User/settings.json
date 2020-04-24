@@ -139,7 +139,19 @@
     "window.restoreWindows": "all",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Monokai",
     "workbench.sideBar.location": "left",
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    }
 }
