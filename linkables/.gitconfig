@@ -2,14 +2,23 @@
 	ignoreCase = false
 	editor = nano
 [diff]
-	tool = diffmerge
+	tool = meld
+[difftool]
+	prompt = false
 [difftool "diffmerge"]
 	cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
+[difftool "meld"]
+	cmd = /usr/local/bin/meld \"$LOCAL\" \"$REMOTE\"
 [merge]
-	tool = diffmerge
+	tool = meld
+[mergetool]
+	prompt = false
 [mergetool "diffmerge"]
 	trustExitCode = true
 	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[mergetool "meld"]
+	trustExitCode = true
+	cmd = /usr/local/bin/meld --output=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [user]
 	name = Mike Gauthiere
 	email = mgauthiere@gmail.com
