@@ -39,6 +39,7 @@ ipython
 isl
 jsonlint
 k3d
+derailed/k9s/k9s
 kube-ps1
 kubectx
 instrumenta/instrumenta/kubeval

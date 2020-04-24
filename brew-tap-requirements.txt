@@ -1,6 +1,7 @@
 chmouel/tektoncd-cli
 codeclimate/formulae
 dcpmidstream/core
+derailed/k9s
 github/gh
 homebrew/cask
 homebrew/core

@@ -9,6 +9,7 @@ gimp
 iterm2
 karabiner-elements
 keybase
+meld
 microsoft-teams
 nordvpn
 postman
