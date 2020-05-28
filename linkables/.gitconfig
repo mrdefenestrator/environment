@@ -2,7 +2,7 @@
 	ignoreCase = false
 	editor = nano
 [diff]
-	tool = meld
+	tool = diffmerge
 [difftool]
 	prompt = false
 [difftool "diffmerge"]
@@ -10,7 +10,7 @@
 [difftool "meld"]
 	cmd = /usr/local/bin/meld \"$LOCAL\" \"$REMOTE\"
 [merge]
-	tool = meld
+	tool = diffmerge
 [mergetool]
 	prompt = false
 [mergetool "diffmerge"]
