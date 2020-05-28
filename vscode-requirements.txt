@@ -21,6 +21,7 @@ ms-azure-devops.azure-pipelines
 ms-azuretools.vscode-azureappservice
 ms-azuretools.vscode-azurefunctions
 ms-azuretools.vscode-docker
+ms-dotnettools.vscode-dotnet-runtime
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-mssql.mssql
 ms-python.python

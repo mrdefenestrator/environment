@@ -23,6 +23,7 @@ geoip
 gh
 git
 git-crypt
+gnu-sed
 gnupg
 go
 grafana
@@ -57,14 +58,17 @@ nano
 ncftp
 nginx
 nuget
+pgcli
 pinentry-mac
 pkg-config
+postgresql
 proxychains-ng
 python-yq
 qt
 rancher-cli
 rancher-compose
 redis
+rke
 shellcheck
 spidermonkey
 sslsplit
