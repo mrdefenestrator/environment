@@ -24,5 +24,6 @@ backup_and_link .gitconfig
 backup_and_link .inputrc
 backup_and_link "Library/Application Support/Code/User/settings.json"
 backup_and_link "Library/Preferences/com.googlecode.iterm2.plist"
+backup_and_link .ssh/config
 
 source "${HOME}/.profile"

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+kubectl get gld,glc,gldbm,glgm,gli,glpromo,deploy,jobs,pods
