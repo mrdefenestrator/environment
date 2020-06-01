@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Script for generating a script to restore this machine's git repos on another machine
+set -eu -o pipefail
+
+repos=$(find ~/git -type d -name .git | sed -E 's/\/\.git$//g')
+
+home=$(echo ${HOME} | sed -E 's/\//\\\//g')
+
+echo "#!/usr/bin/env bash
+set -eu -o pipefail
+"
+
+for repo in $repos; do 
+  (
+    cd $repo
+    echo "mkdir -p $(dirname $repo | sed -E "s/${home}/~/g")"
+    echo "cd $(dirname $repo | sed -E "s/${home}/~/g")"
+    git remote -v | grep --color=never fetch | sed -E 's/ \(fetch\)//g' | sed -E $'s/origin\t/git clone /g'
+    echo ""
+  )
+done
