@@ -117,9 +117,9 @@ do_brew_cask() {
 do_python() {
   if [ "${only}" = false ] || [ "${python}" = true ]; then
     if [ "${upgrade}" = true ]; then
-      get_python_names < python-requirements.txt | xargs -I {} sh -c 'pip3 install --upgrade "{}"'
+      get_python_names < python-requirements.txt | xargs -I {} sh -c 'sudo pip3 install --upgrade "{}"'
     else
-      get_python_names < python-requirements.txt | xargs -I {} sh -c 'pip3 install "{}"'
+      get_python_names < python-requirements.txt | xargs -I {} sh -c 'sudo pip3 install "{}"'
     fi
   fi
 }
