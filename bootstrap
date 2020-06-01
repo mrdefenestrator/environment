@@ -6,7 +6,7 @@ brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebre
 
 mkdir -p ~/git/mrdefenestrator/
 
-xcode-select --install
+xcode-select --install || true
 
 (
   cd ~/git/mrdefenestrator/
