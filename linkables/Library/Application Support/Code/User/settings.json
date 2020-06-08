@@ -130,10 +130,10 @@
     "vs-kubernetes.helm-path": "/Users/mgauthiere/.vs-kubernetes/tools/helm/darwin-amd64/helm",
     "vs-kubernetes.kubectl-path": "/Users/mgauthiere/.vs-kubernetes/tools/kubectl/kubectl",
     "vs-kubernetes.minikube-path": "/Users/mgauthiere/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vs-kubernetes.helm-path.mac": "/Users/michaelgauthiere/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-    "vs-kubernetes.kubectl-path.mac": "/Users/michaelgauthiere/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.draft-path.mac": "/Users/michaelgauthiere/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-    "vs-kubernetes.minikube-path.mac": "/Users/michaelgauthiere/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    "vs-kubernetes.helm-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.kubectl-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.draft-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+    "vs-kubernetes.minikube-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
   },
   "window.nativeTabs": true,
   "window.restoreWindows": "all",

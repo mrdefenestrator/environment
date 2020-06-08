@@ -14,10 +14,14 @@
 	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>5728CB35-14CA-4C56-B1F9-388DA8FEC798</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
 	<key>DimInactiveSplitPanes</key>
 	<true/>
 	<key>DimOnlyText</key>
 	<true/>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -73,13 +77,17 @@
 	<string>0 163 224 275 0 0 1792 1097 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>482 1846 799 448 0 0 1792 1097 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>572 1888 620 392 -398 1120 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>882 1201 1277 1336 -398 1120 2560 1417 </string>
+	<string>882 1119 1277 1417 -398 1120 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>Allow Title Reporting</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -242,7 +250,9 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
+			<key>Blur Radius</key>
+			<real>9.0862448445431454</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -281,7 +291,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -616,7 +626,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>4096</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -647,8 +657,10 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>4</integer>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.096456614847715741</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -672,21 +684,24 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.9</string>
+		<string>3.3.11</string>
 		<string>3.3.10</string>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{-398, 1120}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{-129, 1715}</string>
+		<string>{-180, 2038}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>04939A7E-D1A0-4DB9-8D5D-E8708A25FA00</string>
 	<key>NoSyncLastTipTime</key>
-	<real>612731490.42522705</real>
+	<real>613323626.52197802</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>3</integer>
+	<integer>5</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1061,6 +1076,14 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.lastCommand</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>currentTab</string>
@@ -1415,8 +1438,20 @@
 	<real>605842630.35022795</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
+		<string>0003</string>
+		<string>0001</string>
 		<string>000</string>
+		<string>0004</string>
+		<string>0002</string>
+		<string>0000</string>
+		<string>0005</string>
 	</array>
+	<key>OpenArrangementAtStartup</key>
+	<false/>
+	<key>OpenBookmark</key>
+	<false/>
+	<key>OpenNoWindowsAtStartup</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1452,6 +1487,12 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/mgauthiere/git/github.com/mrdefenestrator/environment/linkables/Library/Preferences</string>
+	<key>PromptOnQuit</key>
+	<false/>
+	<key>RunJobsInServers</key>
+	<true/>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1461,16 +1502,22 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-01T15:47:12Z</date>
+	<date>2020-06-08T15:47:17Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>2261724672</integer>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.27139849290780149</real>
+	<real>0.19073858599290788</real>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.10</string>
+	<string>3.3.11</string>
 </dict>
 </plist>
