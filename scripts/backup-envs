@@ -9,7 +9,7 @@ BASE_PATH="${BACKUP_PATH}/${DATE}"
 
 (
   cd ${DIR}
-  find . -name .env -exec bash -c \
+  find . -name \*.env -exec bash -c \
     "mkdir -p \"${BASE_PATH}/"'$(dirname {})'"\"; cp \"{}\" \"${BASE_PATH}/"'$(dirname {})'"\"" \;
 )
 
