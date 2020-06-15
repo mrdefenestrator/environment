@@ -1,1 +1,5 @@
+#!/usr/bin/env bash
+# Adds all keys to the session keychain
+set -eu -o pipefail
+
 ssh-add ~/.ssh/id_rsa ~/.ssh/personal

@@ -1,5 +1,5 @@
-
 #!/usr/bin/env bash
+# Quickly decodes each section of the JWT
 set -eu
 
 TOKEN="${1}"

@@ -1,1 +1,5 @@
+#!/usr/bin/env bash
+# Shows the ISO8601 date timestamp
+set -eu -o pipefail
+
 date -u +"%Y-%m-%dT%H:%M:%SZ"

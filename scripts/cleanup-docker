@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Stops all docker containers and deletes all images and volumes
 set -u
 
 docker rm $(docker ps -aq)

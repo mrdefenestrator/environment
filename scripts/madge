@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Runs madge to analyze dependency tree
+# Runs madge to analyze javascript dependency tree
 set -eu
 
 npx madge $@
