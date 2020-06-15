@@ -6,6 +6,7 @@ docker
 dotnet-sdk
 firefox
 gimp
+google-chrome
 iterm2
 karabiner-elements
 keybase
@@ -15,6 +16,7 @@ microsoft-teams
 nordvpn
 postman
 pycharm-ce
+qview
 slack
 spectacle
 spotify
