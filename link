@@ -1,29 +1,56 @@
 #!/usr/bin/env bash
-# Create symlinks
+# Create symlinks throughout system to linkables
 set -eu
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-function backup_and_link {
-  if [[ -L "${HOME}/$1" ]]; then
-    ln -sf "${DIR}/linkables/$1" "${HOME}/$1"
-    echo "$1 already linked, updated anyway"
+function _backup_and_link {
+  local linkables_dir="${1}"
+  local file_to_link="${2}"
+  local link_in_dir="${3:-${HOME}}"
+
+  if [[ -L "${link_in_dir}/${file_to_link}" ]]; then
+    ln -sf "${linkables_dir}/${file_to_link}" "${link_in_dir}/${file_to_link}"
+    >&2 echo "${file_to_link} already linked, updated anyway"
   else
-    if [[ -f "${HOME}/$1" ]]; then
-      cp -r "${HOME}/$1" "${HOME}/$1.bak"
+    if [[ -f "${link_in_dir}/${file_to_link}" ]]; then
+      cp -r "${link_in_dir}/${file_to_link}" "${link_in_dir}/${file_to_link}.bak"
     fi
-    ln -sf "${DIR}/linkables/$1" "${HOME}/$1"
-    echo "$1 linked"
+    ln -sf "${linkables_dir}/${file_to_link}" "${link_in_dir}/${file_to_link}"
+    >&2 echo "${file_to_link} linked"
   fi
 }
 
-backup_and_link .profile
-backup_and_link .git-status
-backup_and_link .nanorc
-backup_and_link .gitconfig
-backup_and_link .inputrc
-backup_and_link "Library/Application Support/Code/User/settings.json"
-backup_and_link "Library/Preferences/com.googlecode.iterm2.plist"
-backup_and_link .ssh/config
+function backup_and_link {
+  local linkables_dir="${DIR}/linkables"
+  local file_to_link="${1}"
+  local link_in_dir="${2:-${HOME}}"
 
-source "${HOME}/.profile"
+  local owner
+  # shellcheck disable=SC2012
+  owner="$(ls -ld "${link_in_dir}/${file_to_link}" | awk '{print $3}')"
+
+  if [[ "${owner}" == "root" ]]; then
+    sudo bash -c "$(declare -f _backup_and_link); _backup_and_link \"${linkables_dir}\" \"${file_to_link}\" \"${link_in_dir}\""
+  else
+    _backup_and_link "${linkables_dir}" "${file_to_link}" "${link_in_dir}"
+  fi
+}
+
+main() {
+  backup_and_link ".git-status"
+  backup_and_link ".gitconfig"
+  backup_and_link ".inputrc"
+  backup_and_link ".nanorc"
+  backup_and_link ".profile"
+  backup_and_link ".ssh/config"
+  backup_and_link "Library/Application Support/Code/User/settings.json"
+  backup_and_link "Library/Preferences/com.googlecode.iterm2.plist"
+  backup_and_link "workspace.code-workspace"
+  backup_and_link "etc/shells" "/"
+}
+
+main "$@"
+
+# # shellcheck disable=SC1090
+# source "${HOME}/.profile"
