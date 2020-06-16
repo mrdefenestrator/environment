@@ -19,4 +19,8 @@ sudo xcodebuild -license accept
   chsh -s /usr/local/bin/bash
 
   ./link
+
+  # shellcheck disable=SC1090
+  source "${HOME}/.profile"
+
 )
