@@ -152,5 +152,6 @@
     "args": [
       "serve"
     ]
-  }
+  },
+  "workbench.colorTheme": "Solidity Visual Auditor Dark"
 }

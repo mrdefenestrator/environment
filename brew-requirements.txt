@@ -57,6 +57,7 @@ mitmproxy
 nano
 ncftp
 nginx
+nmap
 nuget
 pgcli
 pinentry-mac
