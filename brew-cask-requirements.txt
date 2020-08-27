@@ -20,6 +20,7 @@ qview
 slack
 spectacle
 spotify
+transmission
 visual-studio-code
 vlc
 webex-teams

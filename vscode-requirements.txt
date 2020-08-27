@@ -1,3 +1,4 @@
+4ops.terraform
 Arjun.swagger-viewer
 austin.code-gnu-global
 christian-kohler.npm-intellisense
@@ -10,13 +11,12 @@ ed-elliott.azure-arm-template-helper
 eg2.vscode-npm-script
 esbenp.prettier-vscode
 glen-84.sass-lint
-golang.Go
+golang.go
 hashicorp.terraform
 humao.rest-client
 jebbs.plantuml
 johnpapa.vscode-peacock
 JuanBlanco.solidity
-karigari.chat
 kisstkondoros.vscode-codemetrics
 mikestead.dotenv
 ms-azure-devops.azure-pipelines
@@ -29,9 +29,6 @@ ms-mssql.mssql
 ms-python.python
 ms-vscode.azure-account
 ms-vscode.cpptools
-ms-vsliveshare.vsliveshare
-ms-vsliveshare.vsliveshare-audio
-ms-vsliveshare.vsliveshare-pack
 msazurermtools.azurerm-vscode-tools
 natewallace.angular2-inline
 numaru.vscode-tap
@@ -41,6 +38,7 @@ redhat.vscode-yaml
 timonwong.shellcheck
 tintinweb.graphviz-interactive-preview
 tintinweb.solidity-visual-auditor
+tintinweb.vscode-ethover
 tintinweb.vscode-inline-bookmarks
 tintinweb.vscode-solidity-flattener
 vncz.vscode-apielements

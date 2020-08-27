@@ -36,11 +36,11 @@ htop
 httpie
 hub
 imagemagick
-ipython
 isl
 jsonlint
 k3d
 derailed/k9s/k9s
+krew
 kube-ps1
 kubectx
 instrumenta/instrumenta/kubeval
@@ -69,11 +69,13 @@ qt
 rancher-cli
 rancher-compose
 redis
+retry
 rke
 shellcheck
 spidermonkey
 sslsplit
 tektoncd-cli
+telnet
 terraform
 the_silver_searcher
 tree
@@ -81,8 +83,10 @@ unixodbc
 velero
 vsts-cli
 watch
+wget
 wireshark
 wxmac
 xmlstarlet
 yamllint
 yarn
+zeromq
