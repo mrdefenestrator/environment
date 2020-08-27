@@ -123,7 +123,7 @@
       "value": "#42b883"
     }
   ],
-  "python.pythonPath": "/Users/mgauthiere/git/dcpmidstream/dcp-services/services/resources/thingies/env/bin/python",
+  "python.pythonPath": "/usr/local/bin/python3",
   "swaggerViewer.previewInBrowser": true,
   "vs-kubernetes": {
     "vs-kubernetes.draft-path": "/Users/mgauthiere/.vs-kubernetes/tools/draft/darwin-amd64/draft",
@@ -153,5 +153,10 @@
       "serve"
     ]
   },
-  "workbench.colorTheme": "Visual Studio Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+"workbench.colorCustomizations": {},
+"python.languageServer": "Microsoft",
+"[yaml]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
 }

@@ -36,6 +36,7 @@ export GREP_COLOR='1;35;40'
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 source "/usr/local/opt/kubectx/etc/bash_completion.d/kubectx"
 source "/usr/local/opt/kubectx/etc/bash_completion.d/kubens"
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 # Git -------------------------------------------------------------------------
 function parse_git_untracked {
@@ -58,7 +59,7 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Prompt ----------------------------------------------------------------------
-export PS1='\n$(kube_ps1)\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \[\033[00m\]$(parse_git_branch)\n> '
+export PS1='\n$(kube_ps1)\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \[\033[00m\]$(parse_git_branch)\n$ '
 
 # SSH -------------------------------------------------------------------------
 #eval `ssh-agent`
@@ -90,6 +91,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # Path ------------------------------------------------------------------------
 export PATH="${PATH}:${HOME}/git/github.com/mrdefenestrator/environment/scripts"
+
+# Istio -----------------------------------------------------------------------
+export PATH="$PATH:/Users/mgauthiere/istio-1.6.6/bin"
 
 # Misc ------------------------------------------------------------------------
 source "${HOME}/.profile-charter"

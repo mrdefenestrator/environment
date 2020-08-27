@@ -2,7 +2,7 @@
 # Quickly decodes each section of the JWT
 set -eu
 
-TOKEN="${1}"
+TOKEN=$(cat)
 
 cut -d . -f 1 <(echo "${TOKEN}") | base64 -D | jq
 cut -d . -f 2 <(echo "${TOKEN}") | base64 -D | jq

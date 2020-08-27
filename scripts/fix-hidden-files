@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Show hidden file in finder
+set -eu
+
+defaults write com.apple.Finder AppleShowAllFiles true
