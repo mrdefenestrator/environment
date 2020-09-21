@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Get kubeconfig cluster from eks, merge with ~/.kube/config and start using immediately
+set -eu -o pipefail
+
+main() {
+  local temp_file="/tmp/eks-kube-config"
+  local cluster_name="${1}"
+
+  mkdir -p "${HOME}/.kube"
+  aws secretsmanager get-secret-value \
+      --secret-id kubernetes/apps-1/kubeconfig \
+      --output yaml \
+    | yq -r '.SecretString' \
+    > "${temp_file}"
+  merge-kubectl "${temp_file}"
+  rm "${temp_file}"
+
+  kubectl config use-context "${cluster_name}"
+}
+
+main "$@"
