@@ -80,11 +80,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 163 224 275 0 0 1792 1097 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>496 504 799 448 0 0 1792 1120 </string>
+	<string>496 486 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>572 1888 620 392 -398 1120 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>882 1120 1277 1417 -398 1120 2560 1417 </string>
+	<string>0 645 570 452 0 0 1792 1120 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -688,24 +688,25 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.9</string>
-		<string>3.3.11</string>
 		<string>3.3.10</string>
+		<string>3.3.11</string>
+		<string>3.3.12</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-398, 1120}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1792, 1120}}</string>
 		<key>topLeft</key>
-		<string>{-180, 2038}</string>
+		<string>{42, 718}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>04939A7E-D1A0-4DB9-8D5D-E8708A25FA00</string>
 	<key>NoSyncLastTipTime</key>
-	<real>613929760.38109398</real>
+	<real>621534956.51941895</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>8</integer>
+	<integer>10</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1442,18 +1443,85 @@
 	<real>605842630.35022795</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
+		<string>0030</string>
+		<string>0023</string>
+		<string>0016</string>
 		<string>0009</string>
-		<string>0006</string>
-		<string>0003</string>
-		<string>0000</string>
-		<string>0007</string>
-		<string>0004</string>
-		<string>0001</string>
-		<string>000</string>
-		<string>0008</string>
-		<string>0005</string>
+		<string>0059</string>
+		<string>0066</string>
+		<string>0073</string>
 		<string>0002</string>
+		<string>0045</string>
+		<string>0038</string>
+		<string>0052</string>
+		<string>0017</string>
+		<string>0031</string>
+		<string>0024</string>
+		<string>0067</string>
+		<string>0074</string>
 		<string>0010</string>
+		<string>0046</string>
+		<string>0003</string>
+		<string>0039</string>
+		<string>0053</string>
+		<string>0060</string>
+		<string>0025</string>
+		<string>0018</string>
+		<string>0032</string>
+		<string>0068</string>
+		<string>0011</string>
+		<string>0047</string>
+		<string>0004</string>
+		<string>0054</string>
+		<string>0061</string>
+		<string>0033</string>
+		<string>0026</string>
+		<string>0019</string>
+		<string>0040</string>
+		<string>0069</string>
+		<string>0076</string>
+		<string>0012</string>
+		<string>0048</string>
+		<string>0005</string>
+		<string>0055</string>
+		<string>0062</string>
+		<string>0041</string>
+		<string>0034</string>
+		<string>0027</string>
+		<string>0077</string>
+		<string>0013</string>
+		<string>0049</string>
+		<string>0006</string>
+		<string>0020</string>
+		<string>0056</string>
+		<string>0063</string>
+		<string>0070</string>
+		<string>0042</string>
+		<string>0035</string>
+		<string>0028</string>
+		<string>0021</string>
+		<string>0014</string>
+		<string>0007</string>
+		<string>0057</string>
+		<string>0064</string>
+		<string>0071</string>
+		<string>0000</string>
+		<string>0029</string>
+		<string>0050</string>
+		<string>0043</string>
+		<string>0036</string>
+		<string>0022</string>
+		<string>0015</string>
+		<string>0008</string>
+		<string>0058</string>
+		<string>0065</string>
+		<string>0072</string>
+		<string>0001</string>
+		<string>0037</string>
+		<string>000</string>
+		<string>0044</string>
+		<string>0051</string>
+		<string>0078</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -1501,7 +1569,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/mgauthiere/git/github.com/mrdefenestrator/environment/linkables/Library/Preferences</string>
+	<string>/Users/mgauthiere/git/github.com/mrdefenestrator/environment/linkables/HOME/Library/Preferences</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuickPasteBytesPerCall</key>
@@ -1521,7 +1589,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-15T15:54:15Z</date>
+	<date>2020-09-21T15:25:53Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -1537,6 +1605,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.11</string>
+	<string>3.3.12</string>
 </dict>
 </plist>
