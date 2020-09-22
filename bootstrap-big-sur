@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Bootstraps a brand new system
-set -eux -o pipefail
+set -eu -o pipefail
 
 brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -10,11 +10,8 @@ brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebre
 
 base_dir="~/git/github.com/mrdefenestrator/"
 mkdir -p "${base_dir}"
-echo "$base_dir"
-pwd
 (
   cd "${base_dir}"
-  pwd
   git clone git://github.com/mrdefenestrator/environment.git || true
   cd environment/
   ./install-packages
