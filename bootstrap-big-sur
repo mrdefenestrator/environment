@@ -4,14 +4,14 @@ set -eu
 
 brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-mkdir -p ~/git/github.com/mrdefenestrator/
-
 # sudo rm -rf /Library/Developer/CommandLineTools
 # xcode-select --install || true
 # sudo xcodebuild -license accept
 
+base_dir="~/git/github.com/mrdefenestrator/"
+mkdir -p "${base_dir}"
 (
-  cd ~/git/mrdefenestrator/
+  cd "${base_dir}"
   git clone git://github.com/mrdefenestrator/environment.git || true
   cd environment/
   ./install-packages
