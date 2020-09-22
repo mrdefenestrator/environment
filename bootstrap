@@ -6,7 +6,6 @@ brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebre
 
 mkdir -p ~/git/github.com/mrdefenestrator/
 
-# sudo rm -rf /Library/Developer/CommandLineTools
 xcode-select --install || true
 sudo xcodebuild -license accept
 
