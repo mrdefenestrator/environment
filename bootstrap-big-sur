@@ -4,11 +4,12 @@ set -eu -o pipefail
 
 brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# sudo rm -rf /Library/Developer/CommandLineTools
+# sudo rm -rf /Library/Developer/CommandLineTools  # force CLT to be reinstalled
+# softwareupdate --install -a  # install XCode
 # xcode-select --install || true
 # sudo xcodebuild -license accept
 
-base_dir="~/git/github.com/mrdefenestrator/"
+base_dir="${HOME}/git/github.com/mrdefenestrator/"
 mkdir -p "${base_dir}"
 (
   cd "${base_dir}"
