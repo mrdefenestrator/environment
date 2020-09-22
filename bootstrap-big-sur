@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Bootstraps a brand new system
+set -eu
+
+brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+mkdir -p ~/git/github.com/mrdefenestrator/
+
+# sudo rm -rf /Library/Developer/CommandLineTools
+# xcode-select --install || true
+# sudo xcodebuild -license accept
+
+(
+  cd ~/git/mrdefenestrator/
+  git clone git://github.com/mrdefenestrator/environment.git || true
+  cd environment/
+  ./install-packages
+
+  grep '/usr/local/bin/bash' /etc/shells || sudo sh -c "echo /usr/local/bin/bash >> /etc/shells"
+  chsh -s /usr/local/bin/bash
+
+  ./link
+
+  # shellcheck disable=SC1090
+  source "${HOME}/.profile"
+
+)
