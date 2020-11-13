@@ -61,7 +61,6 @@ nmap
 nuget
 pgcli
 pinentry-mac
-pkg-config
 postgresql
 proxychains-ng
 python-yq

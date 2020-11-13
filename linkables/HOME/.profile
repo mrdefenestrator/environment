@@ -97,3 +97,5 @@ export PATH="$PATH:/Users/mgauthiere/istio-1.6.6/bin"
 
 # Misc ------------------------------------------------------------------------
 source "${HOME}/.profile-charter"
+
+export HELM_EXPERIMENTAL_OCI=1
