@@ -23,6 +23,7 @@ geoip
 gh
 git
 git-crypt
+git-lfs
 gnu-sed
 gnupg
 go

@@ -27,6 +27,8 @@ ms-dotnettools.vscode-dotnet-runtime
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-mssql.mssql
 ms-python.python
+ms-toolsai.jupyter
+ms-vscode-remote.remote-containers
 ms-vscode.azure-account
 ms-vscode.cpptools
 msazurermtools.azurerm-vscode-tools

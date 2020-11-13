@@ -4,7 +4,7 @@ set -eu
 
 brew tap > brew-tap-requirements.txt
 brew leaves > brew-requirements.txt
-brew cask list > brew-cask-requirements.txt
+brew list --cask > brew-cask-requirements.txt
 pip3 freeze > python-requirements.txt
 mas list > mas-requirements.txt
 code --list-extensions > vscode-requirements.txt
