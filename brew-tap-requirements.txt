@@ -4,6 +4,7 @@ dcpmidstream/core
 derailed/k9s
 github/gh
 homebrew/cask
+homebrew/cask-versions
 homebrew/core
 homebrew/services
 instrumenta/instrumenta
