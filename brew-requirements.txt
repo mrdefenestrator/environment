@@ -40,6 +40,7 @@ imagemagick
 instrumenta/instrumenta/conftest
 instrumenta/instrumenta/kubeval
 isl
+jansson
 jsonlint
 k3d
 krew
