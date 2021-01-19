@@ -160,5 +160,6 @@
 },
 "[json]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
+},
+"terminal.integrated.copyOnSelection": true
 }

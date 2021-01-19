@@ -1,6 +1,7 @@
 [core]
 	ignoreCase = false
 	editor = nano
+	mergeoptions = --no-edit
 [diff]
 	tool = diffmerge
 [difftool]
