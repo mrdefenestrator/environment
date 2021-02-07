@@ -1,3 +1,4 @@
+aws/tap/ec2-instance-selector
 awscli
 azure-cli
 bash
@@ -17,6 +18,7 @@ ethereum
 exa
 faas-cli
 fish
+fluxcd/tap/flux
 fluxctl
 geoip
 gh
@@ -43,6 +45,7 @@ isl
 jansson
 jsonlint
 k3d
+kibana
 krew
 kube-ps1
 kubectx

@@ -1,7 +1,9 @@
+aws/tap
 chmouel/tektoncd-cli
 codeclimate/formulae
 dcpmidstream/core
 derailed/k9s
+fluxcd/tap
 github/gh
 homebrew/cask
 homebrew/cask-versions
