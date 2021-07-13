@@ -132,11 +132,11 @@
     "vs-kubernetes.helm-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/helm/darwin-amd64/helm",
     "vs-kubernetes.kubectl-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/kubectl/kubectl",
     "vs-kubernetes.draft-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-    "vs-kubernetes.minikube-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    "vs-kubernetes.minikube-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vscode-kubernetes.minikube-path.mac": "/Users/mgauthiere/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
   },
   "window.nativeTabs": true,
   "window.restoreWindows": "all",
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
   "python.jediEnabled": false,
@@ -161,5 +161,34 @@
 "[json]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 },
-"terminal.integrated.copyOnSelection": true
+"terminal.integrated.copyOnSelection": true,
+"go.toolsManagement.autoUpdate": true,
+"cSpell.userWords": [
+  "autoscaler",
+  "eksctl",
+  "gitlab",
+  "grafana",
+  "horizontal",
+  "keycloak",
+  "kibana",
+  "krew",
+  "kube",
+  "kubectl",
+  "kubernetes",
+  "kustomization",
+  "kustomizations",
+  "kustomize",
+  "kyverno",
+  "oidc",
+  "pod",
+  "rbac",
+  "spectrumflow",
+  "yaml"
+],
+"workbench.editor.untitled.hint": "hidden",
+"workbench.editorAssociations": {
+  "*.ipynb": "jupyter.notebook.ipynb"
+},
+"security.workspace.trust.untrustedFiles": "open",
+"redhat.telemetry.enabled": true
 }
