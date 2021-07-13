@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# Converts a Java key store containing an RSA key & cert to a JSON Web Key Set
+# requires java (not openjdk)
+set -eu -o pipefail
+
+PASSWORD="${1}"
+
+keytool \
+  -importkeystore \
+  -srckeystore /dev/stdin \
+  -srcstorepass "${PASSWORD}" \
+  -destkeystore keystore.p12 \
+  -deststoretype PKCS12 \
+  -deststorepass "${PASSWORD}" \
+  -destkeypass "${PASSWORD}"
+
+declare KEYSTORE_PEM
+KEYSTORE_PEM="$(openssl pkcs12 \
+  -passin "pass:${PASSWORD}" \
+  -passout "pass:${PASSWORD}" \
+  < keystore.p12 \
+)"
+
+rm keystore.p12
+
+declare CERT_JWK
+CERT_JWK="$(echo "${KEYSTORE_PEM}" | \
+openssl x509 \
+  -passin "pass:${PASSWORD}" \
+  | \
+docker run \
+  -i danedmunds/pem-to-jwk:latest \
+  --pretty
+)"
+
+declare PKEY_JWK
+PKEY_JWK="$(echo "${KEYSTORE_PEM}" | \
+openssl rsa \
+  -passin "pass:${PASSWORD}" \
+  | \
+docker run \
+  -i danedmunds/pem-to-jwk:latest \
+  --pretty
+)"
+
+jq \
+  --arg cert "${CERT_JWK}" \
+  --arg pkey "${PKEY_JWK}" \
+  -rn "{keys: [${CERT_JWK}, ${PKEY_JWK}]}"

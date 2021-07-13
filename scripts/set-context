@@ -1,0 +1,7 @@
+cluster_name=$1
+
+cd "${HOME}/git/gitlab.spectrumflow.net/PDE/kubernetes/clusters/kube/kustomizations/clusters/" 
+"${cluster_name}/bootstrap/scripts/set-context" > /dev/null
+cat "${cluster_name}/bootstrap/scripts/.cluster"
+cd - > /dev/null
+
