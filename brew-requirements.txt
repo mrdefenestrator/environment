@@ -9,7 +9,6 @@ cmake
 codeclimate/formulae/codeclimate
 colordiff
 coreutils
-dcpmidstream/core/el
 derailed/k9s/k9s
 diff-so-fancy
 docker-machine-driver-hyperkit
