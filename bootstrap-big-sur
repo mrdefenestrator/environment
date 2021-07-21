@@ -2,7 +2,7 @@
 # Bootstraps a brand new system
 set -eux -o pipefail
 
-brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 export SYSTEM_VERSION_COMPAT=1
 # sudo rm -rf /Library/Developer/CommandLineTools  # force CLT to be reinstalled
