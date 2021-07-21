@@ -2,7 +2,7 @@
 # Bootstraps a brand new system
 set -eu
 
-brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 mkdir -p ~/git/github.com/mrdefenestrator/
 
