@@ -1,0 +1,8 @@
+# linux:
+date --date="$(kubectl get secret wildcard-spectrumtoolbox-com-plus -oyaml | yq -r '.data["tls.crt"] | @base64d' | openssl x509 -enddate -noout | cut -d= -f 2)" --iso-8601
+
+# mac:
+date -jf "%b %e %H:%M:%S %Y %Z" "$(kubectl get secret wildcard-spectrumtoolbox-com-plus -oyaml | yq -r '.data["tls.crt"] | @base64d' | openssl x509 -enddate -noout | cut -d= -f 2)" +"%Y-%m-%d"
+
+
+echo clusters/{green,blue,red,black}/external-secrets/gitlab/wildcard-spectrum{xg,flow}-tls.yaml

@@ -96,6 +96,5 @@ export PATH="${PATH}:${HOME}/git/github.com/mrdefenestrator/environment/scripts"
 export PATH="$PATH:/Users/mgauthiere/istio-1.6.6/bin"
 
 # Misc ------------------------------------------------------------------------
-source "${HOME}/.profile-charter"
-
 export HELM_EXPERIMENTAL_OCI=1
+. "$HOME/.cargo/env"

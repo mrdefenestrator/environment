@@ -1,5 +1,7 @@
+1password
 adobe-acrobat-reader
 bettertouchtool
+cakebrew
 dbeaver-community
 diffmerge
 docker
@@ -14,8 +16,10 @@ macdown
 meld
 microsoft-teams
 nordvpn
+oracle-jdk
 postman
 pycharm-ce
+qmk-toolbox
 qview
 slack
 spectacle

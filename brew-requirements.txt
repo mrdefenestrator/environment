@@ -22,8 +22,8 @@ fluxcd/tap/flux
 fluxctl
 geoip
 gh
-git
 git-crypt
+git-filter-repo
 git-lfs
 gitlab-runner
 gnu-sed
@@ -46,6 +46,7 @@ jansson
 jsonlint
 k3d
 kibana
+kind
 krew
 kube-ps1
 kubectx
@@ -53,7 +54,7 @@ kustomize
 lazydocker
 lazygit
 libmpc
-lua
+lua@5.1
 lynx
 mas
 micro
@@ -64,6 +65,7 @@ ncftp
 nginx
 nmap
 nuget
+openjdk
 pgcli
 pinentry-mac
 postgresql
@@ -84,6 +86,7 @@ terraform
 terraform@0.12
 the_silver_searcher
 tree
+truffle
 unixodbc
 velero
 vsts-cli
