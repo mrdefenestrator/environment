@@ -106,10 +106,10 @@ do_brew_cask() {
       if [ "${fast}" = true ]; then
         brew cask upgrade
       else
-        xargs -I {} sh -c 'brew --cask upgrade "{}"' < brew-cask-requirements.txt
+        xargs -I {} sh -c 'brew upgrade --cask "{}"' < brew-cask-requirements.txt
       fi
     else
-      xargs -I {} sh -c 'brew --cask install "{}"' < brew-cask-requirements.txt
+      xargs -I {} sh -c 'brew install --cask "{}"' < brew-cask-requirements.txt
     fi
   fi
 }
