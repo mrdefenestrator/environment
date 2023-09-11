@@ -52,7 +52,7 @@ function parse_git_branch {
 
 # Prompt ----------------------------------------------------------------------
 NEWLINE=$'\n'
-export PROMPT='${NEWLINE}%B%F{cyan}%n@%m%f:%F{blue}%d%f $(parse_git_branch) $(kube_ps1)${NEWLINE}>%b '
+export PROMPT='${NEWLINE}%B%F{cyan}%n@%m%f:%F{blue}%~%f $(parse_git_branch) $(kube_ps1)${NEWLINE}>%b '
 
 # SSH -------------------------------------------------------------------------
 #eval `ssh-agent`
