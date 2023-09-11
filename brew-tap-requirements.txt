@@ -1,13 +1,6 @@
 aws/tap
-chmouel/tektoncd-cli
-codeclimate/formulae
-derailed/k9s
 fluxcd/tap
 github/gh
-homebrew/cask
-homebrew/cask-drivers
 homebrew/cask-versions
-homebrew/core
 homebrew/services
-instrumenta/instrumenta
 weaveworks/tap

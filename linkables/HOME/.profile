@@ -2,16 +2,11 @@
 alias ls="ls -G"
 alias ll="exa -lFg --git --color-scale"
 alias la="exa -laaFg --git --color-scale"
-alias nano="/usr/local/bin/nano -c"
+#alias nano="/usr/local/bin/nano -c"
 alias diff="colordiff"
-alias clip="pbcopy"
-alias paste="pbpaste"
 alias tar="export COPYFILE_DISABLE=true; tar"
 alias wireshark="nohup sudo Wireshark &> /dev/null &"
 alias gs="git-status"
-alias gvnm="grep -v node_modules"
-alias bl="./node_modules/.bin/bunyan"
-alias myopenssl="/usr/local/opt/openssl@1.1/bin/openssl"
 alias wf="watch -n 1 -d "
 alias k="kubectl"
 alias e="eksctl"
@@ -33,10 +28,10 @@ export GREP_OPTIONS='--color=always'
 export GREP_COLOR='1;35;40'
 
 # Kubernetes ------------------------------------------------------------------
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-source "/usr/local/opt/kubectx/etc/bash_completion.d/kubectx"
-source "/usr/local/opt/kubectx/etc/bash_completion.d/kubens"
-export PATH="${PATH}:${HOME}/.krew/bin"
+#source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+#source "/usr/local/opt/kubectx/etc/bash_completion.d/kubectx"
+#source "/usr/local/opt/kubectx/etc/bash_completion.d/kubens"
+#export PATH="${PATH}:${HOME}/.krew/bin"
 
 # Git -------------------------------------------------------------------------
 function parse_git_untracked {
@@ -65,10 +60,10 @@ export PS1='\n\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] $(par
 #eval `ssh-agent`
 
 # Node -------------------------------------------------------------------------
-export PATH="$PATH:./node_modules/.bin"
+#export PATH="$PATH:./node_modules/.bin"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Bash Completion -------------------------------------------------------------
 #if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -76,25 +71,25 @@ export NVM_DIR="$HOME/.nvm"
 #fi
 
 # ITERM2-----------------------------------------------------------------------
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 # Golang ----------------------------------------------------------------------
-export GO111MODULE="auto"
-export GOPATH="${HOME}/go"
-export GOBIN="${GOPATH}/bin"
-export PATH="${PATH}:${GOBIN}"
+#export GO111MODULE="auto"
+#export GOPATH="${HOME}/go"
+#export GOBIN="${GOPATH}/bin"
+#export PATH="${PATH}:${GOBIN}"
 
 # NVM -------------------------------------------------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Path ------------------------------------------------------------------------
 export PATH="${PATH}:${HOME}/git/github.com/mrdefenestrator/environment/scripts"
 
 # Istio -----------------------------------------------------------------------
-export PATH="$PATH:/Users/mgauthiere/istio-1.6.6/bin"
+#export PATH="$PATH:/Users/mgauthiere/istio-1.6.6/bin"
 
 # Misc ------------------------------------------------------------------------
-export HELM_EXPERIMENTAL_OCI=1
-. "$HOME/.cargo/env"
+#export HELM_EXPERIMENTAL_OCI=1
+#. "$HOME/.cargo/env"

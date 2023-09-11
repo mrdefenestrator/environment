@@ -4,23 +4,23 @@ set -eu
 
 brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-mkdir -p ~/git/github.com/mrdefenestrator/
-
-xcode-select --install || true
-sudo xcodebuild -license accept
+# export SYSTEM_VERSION_COMPAT=1
+# sudo rm -rf /Library/Developer/CommandLineTools  # force CLT to be reinstalled
+# Install manually from https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12/Command_Line_Tools_for_Xcode_12.dmg
+# softwareupdate --install -a  # install XCode
+# xcode-select --install || true
+# sudo xcodebuild -license accept
 
 (
-  cd ~/git/mrdefenestrator/
-  git clone git://github.com/mrdefenestrator/environment.git || true
+  mkdir -p ~/git/github.com/mrdefenestrator/
+  cd ~/git/github.com/mrdefenestrator/
+  git clone https://github.com/mrdefenestrator/environment.git || true
   cd environment/
-  ./install-packages
 
-  grep '/usr/local/bin/bash' /etc/shells || sudo sh -c "echo /usr/local/bin/bash >> /etc/shells"
-  chsh -s /usr/local/bin/bash
+  ./install-packages
 
   ./link
 
   # shellcheck disable=SC1090
   source "${HOME}/.profile"
-
 )
